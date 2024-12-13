@@ -34,11 +34,11 @@
 ![Lựa chọn 1](image-2.png)
 
 ## Bước 2: 
-    + Chọn vào mục lựa chọn *.iso*:
-        ![Lựa chọn iso](image-3.png)
-    + Nhấn vào "Browse", chọn tới vị trí đã đặt file ubuntu giải nén:
-        ![Lựa chọn file Ubuntu đã giải nén](image-4.png)
-    + Nhấn "Next"
++ Chọn vào mục lựa chọn *.iso*:
+    ![Lựa chọn iso](image-3.png)
++ Nhấn vào "Browse", chọn tới vị trí đã đặt file ubuntu giải nén:
+    ![Lựa chọn file Ubuntu đã giải nén](image-4.png)
++ Nhấn "Next"
 
 ## Bước 3: Nhập các thông tin cho người dùng máy ảo này
 ![Nhập thông tin](image-5.png) 
@@ -47,20 +47,20 @@
 ![Thông tin cho máy ảo](image-6.png)
 
 ## Bước 5: Cấu hình thông tin đĩa lưu trữ
-    + Ở đây mình khuyến cáo các bạn nên để 20gb, hoặc các bạn máy yếu có thể đề từ 10gb đến 15gb 
-    ![Cấu hình không gian đĩa](image-7.png)
++ Ở đây mình khuyến cáo các bạn nên để 20gb, hoặc các bạn máy yếu có thể đề từ 10gb đến 15gb 
+![Cấu hình không gian đĩa](image-7.png)
 
 ## Bước 6: Kiểm tra và điều chỉnh thông tin phần cứng
-    + Mặc định mạng được lựa chọn là NAT nên nếu các bạn để nguyên và nhấn "Next" thì cũng được
-    + Mình sẽ hướng dẫn cấu hình chi tiết các bạn theo hướng trên có thể bỏ qua nha:
-    + Các bạn nhấn vào "Customize Hardware..."
-        ![Truy cập cấu hình chi tiết](image-8.png)
-    + Giao diện hiện lên như sau:
-        ![Giao diện cấu hình chio tiết](image-9.png)
-    + Tại phần "Network Adapter" mình sẽ lựa chọn giữ nguyên *NAT*
-        ![Lựa chọn mạng cấu hình](image-10.png)
-    + Rồi các bạn nhấn vào phần "Close"
-    + Sau đó nhấn "Finish"
++ Mặc định mạng được lựa chọn là NAT nên nếu các bạn để nguyên và nhấn "Next" thì cũng được
++ Mình sẽ hướng dẫn cấu hình chi tiết các bạn theo hướng trên có thể bỏ qua nha:
++ Các bạn nhấn vào "Customize Hardware..."
+    ![Truy cập cấu hình chi tiết](image-8.png)
++ Giao diện hiện lên như sau:
+    ![Giao diện cấu hình chio tiết](image-9.png)
++ Tại phần "Network Adapter" mình sẽ lựa chọn giữ nguyên *NAT*
+    ![Lựa chọn mạng cấu hình](image-10.png)
++ Rồi các bạn nhấn vào phần "Close"
++ Sau đó nhấn "Finish"
 
 ## Bước 7: Cài đặt cho máy ảo
 ***Lưu ý:*** Sử dụng các phím *mũi tên* để lựa chọn option, sử dụng *tabs* để chọn tính năng, *enter* để nhấn đồng ý lựa chọn
@@ -101,20 +101,20 @@
         ![Truy cập vào root](image-27.png)
 
 ## Bước 8: Sửa wifi sang tĩnh để tránh tình trạng cài đặt lại
-    + Bạn mở lại VMWare vào phần **Edit > Virtual Network Editor**
-    + Lựa chọn vào mục 2 vào chọn *NAT Setting*
-        ![Lựa chọn xem thông tin mạng NAT](image-28.png)
-    + Chú ý vào phần địa chỉ ip này
-        ![Địa chỉ ip](image-29.png)
-    + Mở terminal trên win, nhập lệnh chỉnh sửa
-        `vi /etc/netplan/00-installer-config.yaml`
-        ![Truy cập file sửa địa chỉ mạng](image-30.png)
-    + Nhấn "i" và sửa thông tin tương ứng thành:
-        ![Sửa thông tin](image-31.png)
-    + Nhấn "esc" sau đó nhập ":x" để lưu lại và thoát
-    + Sau đó nhập lệnh để áp dụng
-        `netplan apply`
-    + Tiến hành thử connect lại với ubuntu bằng terminal của win
-        ![Thử connect lại](image-32.png)
++ Bạn mở lại VMWare vào phần **Edit > Virtual Network Editor**
++ Lựa chọn vào mục 2 vào chọn *NAT Setting*
+    ![Lựa chọn xem thông tin mạng NAT](image-28.png)
++ Chú ý vào phần địa chỉ ip này
+    ![Địa chỉ ip](image-29.png)
++ Mở terminal trên win, nhập lệnh chỉnh sửa
+    `vi /etc/netplan/00-installer-config.yaml`
+    ![Truy cập file sửa địa chỉ mạng](image-30.png)
++ Nhấn "i" và sửa thông tin tương ứng thành:
+    ![Sửa thông tin](image-31.png)
++ Nhấn "esc" sau đó nhập ":x" để lưu lại và thoát
++ Sau đó nhập lệnh để áp dụng
+    `netplan apply`
++ Tiến hành thử connect lại với ubuntu bằng terminal của win
+    ![Thử connect lại](image-32.png)
 
 ### -- Vậy là đã kết thúc quá trình thiết lập ubuntu --    
